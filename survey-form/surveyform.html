@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form action='https://register-demo.freecodecamp.org' id="survey-form">
+
+        <label id="name-label">Name <input type="text" name="first-name" id="name" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email <input type="email" name="email" placeholder="Enter your email" required id="email" /></label>
+        <label id="number-label">Age <input type="number" placeholder="Enter your Age" name="number" id="number" min="13" max="120" required /></label>
+        <label id="number-label">Your current role? <select name="number" id="dropdown">
+          <option>Select current role</option>
+          <option>Student</option>
+          <option>Full Time Job</option>
+          <option>Freelancer</option>
+          <option>Other</option>
+          </select></label>
+        <label id="recommendation"> Would you recommend freeCodeCamp to a friend? </label>
+        <label><input type="radio" name="recommend" class="inline" value="def" checked/> Definitely</label>
+        <label><input type="radio" name="recommend" class="inline" value="may"/> Maybe</label>
+        <label><input type="radio" name="recommend" class="inline" value="not"/> Not sure</label>
+        <label id="improve">What would you like to see improved?</label> 
+       <label><input type="checkbox" value="fep" class="inline"/> Front-end Projects</label>
+      <label><input type="checkbox" value="bep" class="inline"/> Back-end Projects </label>
+       <label><input type="checkbox" value="ai-ml" class="inline"/> AI-ML Projects </label>
+        
+        <label id="comment">Any comments or suggestions?
+          <textarea name="bio" rows="5" cols="70" placeholder="Enter your comments here"></textarea>
+        </label>
+ 
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
